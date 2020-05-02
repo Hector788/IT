@@ -1,0 +1,291 @@
+            * {
+                margin: 0;
+            }
+            
+            body {
+                background: rgba(0, 0, 0, 0.959);
+            }
+            /*title*/
+            
+            .title-container {
+                display: flex;
+                justify-content: left;
+                width: 100%;
+                line-height: 60px;
+                background: linear-gradient(black, blue);
+                color: rgb(241, 241, 241);
+                text-shadow: 1px 1px 1px black;
+                text-transform: uppercase;
+                font-size: large;
+                position: fixed;
+                top: 0px;
+                border-bottom-left-radius: 2%;
+                border-bottom-right-radius: 2%;
+                z-index: 50;
+                animation: tech-font 5s infinite alternate;
+            }
+            
+            @keyframes tech-font {
+                to {
+                    opacity: 1;
+                    margin-top: 0px;
+                }
+                from {
+                    opacity: 0;
+                    margin-top: 10px;
+                }
+            }
+            
+            .title {
+                animation: title 5 infinite alternate;
+                transition-duration: 5s;
+                margin-left: 3%;
+            }
+            
+            @keyframes title {
+                0% {
+                    opacity: 0;
+                    margin-left: -50%;
+                    transform: scale(.5);
+                }
+                25% {
+                    opacity: .11;
+                    margin-left: 3%;
+                    transform: scale(.8);
+                }
+                50% {
+                    opacity: .51;
+                    margin-left: 3%;
+                    transform: scale(.8);
+                }
+                100% {
+                    opacity: 1;
+                    margin-left: 3%;
+                    transform: scale(.8);
+                    transform: rotateY(360deg);
+                }
+            }
+            
+            .tech {
+                text-transform: uppercase;
+                position: fixed;
+                z-index: 60px;
+                top: 0;
+                left: 65%;
+                color: red;
+                animation-delay: 5s;
+                animation: tech 5s infinite alternate;
+            }
+            
+            @keyframes tech {
+                to {
+                    opacity: 1;
+                    margin-left: 1%;
+                }
+                from {
+                    opacity: 0;
+                    margin-left: 50%;
+                }
+            }
+            /*carousel*/
+            
+            #slider {
+                margin-top: 80px;
+                overflow: hidden;
+            }
+            
+            #slider figure {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+            }
+            
+            #slider figure img {
+                width: 20%;
+                border-radius: 5%;
+                float: left;
+            }
+            
+            @keyframes slider {
+                0% {
+                    left: 0;
+                }
+                20% {
+                    left: 0;
+                }
+                25% {
+                    left: -100%;
+                }
+                45% {
+                    left: -100%;
+                }
+                50% {
+                    left: -200%;
+                }
+                70% {
+                    left: -200%;
+                }
+                75% {
+                    left: -300%;
+                }
+                95% {
+                    left: -300%;
+                }
+                100% {
+                    left: -400%;
+                }
+            }
+            /*Slogan*/
+            
+            .slogan {
+                text-align: center;
+                margin-top: 15px;
+                text-shadow: 1px 1px 1px black;
+                color: whitesmoke;
+                text-transform: capitalize;
+            }
+            /*Social-media*/
+            
+            .social-media {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 50px;
+                color: whitesmoke;
+            }
+            
+            .facebook:hover {
+                color: blue;
+                font-size: 60px;
+            }
+            
+            .instagram:hover {
+                color: rgb(247, 0, 255);
+                font-size: 60px;
+            }
+            
+            .twitter:hover {
+                color: rgb(0, 119, 255);
+                font-size: 60px;
+            }
+            /*cards*/
+            
+            .main-container {
+                margin-top: 30px;
+                margin: 5px 5px 5px 5px;
+                padding: 5px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            .title-cuadrados {
+                color: red;
+                text-transform: uppercase;
+            }
+            
+            .cuadrado1 li a {
+                text-decoration: none;
+                list-style: none;
+                text-align: left;
+                color: whitesmoke;
+            }
+            
+            .cuadrado1 li {
+                line-height: 30px;
+                margin-top: 40px;
+            }
+            
+            .cuadrado1 a:hover {
+                line-height: 30px;
+                margin-top: 40px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            
+            .cuadrado0,
+            .cuadrado1,
+            .cuadrado2 {
+                height: 500px;
+                border: 1px solid black;
+                text-align: center;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                color: whitesmoke;
+                background: radial-gradient(gray, rgb(87, 80, 80)50%, rgb(47, 47, 47));
+                border-radius: 10px;
+                z-index: 1;
+                transition: .9s;
+                padding: 1em;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                filter: blur(2px);
+            }
+            
+            .cuadrado0:hover,
+            .cuadrado1:hover,
+            .cuadrado2:hover {
+                background: radial-gradient( rgb(3, 16, 196), black);
+                transform: scale(1) rotate(360deg) rotateY(360deg);
+                filter: blur(0px);
+                z-index: 10;
+                align-items: center;
+            }
+            /*Parrafos*/
+            
+            .parrafo-title {
+                text-align: center;
+                color: red;
+                text-transform: capitalize;
+            }
+            
+            marquee {
+                padding: 5px;
+                color: whitesmoke;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+            
+            .parrafos {
+                text-align: justify;
+                color: whitesmoke;
+                padding: 5px;
+                margin: 5px 5px 5px 5px;
+            }
+            /*Imagenes*/
+            
+            .img {
+                width: 95%;
+                height: 250px;
+                border-radius: 20px;
+                padding: 5px;
+            }
+            /*Lista de servicios*/
+            
+            .lista-servicios {
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                text-transform: capitalize;
+            }
+            
+            .lista-servicios a {
+                text-align: left;
+            }
+            /*frase*/
+            
+            .frase {
+                text-align: center;
+                color: red;
+            }
