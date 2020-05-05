@@ -71,7 +71,7 @@
                 position: fixed;
                 z-index: 60px;
                 top: 0;
-                left: 65%;
+                left: 55%;
                 color: red;
                 animation-delay: 5s;
                 animation: tech 5s infinite alternate;
@@ -90,13 +90,14 @@
             /*carousel*/
             
             #slider {
-                margin-top: 80px;
                 overflow: hidden;
+                margin-top: 45px;
             }
             
             #slider figure {
                 position: relative;
                 width: 500%;
+                top: 10px;
                 margin: 0;
                 left: 0;
                 animation: 20s slider infinite;
@@ -104,16 +105,15 @@
             
             #slider figure img {
                 width: 20%;
-                border-radius: 5%;
                 float: left;
             }
             
             @keyframes slider {
                 0% {
-                    left: 0;
+                    left: 0%;
                 }
                 20% {
-                    left: 0;
+                    left: 0%;
                 }
                 25% {
                     left: -100%;
@@ -132,6 +132,9 @@
                 }
                 95% {
                     left: -300%;
+                }
+                100% {
+                    left: -400%;
                 }
                 100% {
                     left: -400%;
@@ -276,14 +279,6 @@
                 margin: 5px 5px 5px 5px;
             }
             /*Imagenes*/
-            
-            .img {
-                width: 95%;
-                height: 250px;
-                border-radius: 20px;
-                padding: 5px;
-                object-fit: cover;
-            }
             /*Lista de servicios*/
             
             .lista-servicios {
@@ -312,7 +307,11 @@
                 padding: 10px;
             }
             
-            @media screen and (min-width:600px)and (max-width: 1400px) {
+            img {
+                border-radius: 10px;
+            }
+            
+            @media screen and (min-width:700px)and (max-width: 1400px) {
                 .title-container {
                     display: flex;
                     justify-content: space-evenly;
