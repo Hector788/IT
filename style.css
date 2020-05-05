@@ -139,6 +139,11 @@
             }
             /*Slogan*/
             
+            .slogan-container {
+                padding: 10px;
+                margin: 10px;
+            }
+            
             .slogan {
                 text-align: center;
                 margin-top: 15px;
@@ -155,21 +160,25 @@
                 margin-top: 10px;
                 font-size: 50px;
                 color: whitesmoke;
+                transition: .9s;
             }
             
             .facebook:hover {
                 color: blue;
                 font-size: 60px;
+                transition: .9s;
             }
             
             .instagram:hover {
                 color: rgb(247, 0, 255);
                 font-size: 60px;
+                transition: .9s;
             }
             
             .twitter:hover {
                 color: rgb(0, 119, 255);
                 font-size: 60px;
+                transition: .9s;
             }
             /*cards*/
             
@@ -206,6 +215,7 @@
                 margin-top: 40px;
                 font-size: 25px;
                 font-weight: 600;
+                color: red;
             }
             
             .cuadrado0,
@@ -216,10 +226,11 @@
                 text-align: center;
                 box-sizing: border-box;
                 letter-spacing: 1px;
-                color: whitesmoke;
-                background: radial-gradient(gray, rgb(87, 80, 80)50%, rgb(47, 47, 47));
+                color: rgb(87, 80, 80);
+                background: radial-gradient( rgb(3, 16, 196), black);
+                border: .5px solid whitesmoke;
                 border-radius: 10px;
-                z-index: 1;
+                z-index: 11;
                 transition: .9s;
                 padding: 1em;
                 margin-bottom: 10px;
@@ -230,7 +241,7 @@
                 text-align: center;
                 justify-content: center;
                 flex-direction: column;
-                filter: blur(2px);
+                filter: blur(3px);
             }
             
             .cuadrado0:hover,
@@ -238,6 +249,7 @@
             .cuadrado2:hover {
                 background: radial-gradient( rgb(3, 16, 196), black);
                 transform: scale(1) rotate(360deg) rotateY(360deg);
+                color: white;
                 filter: blur(0px);
                 z-index: 10;
                 align-items: center;
@@ -270,6 +282,7 @@
                 height: 250px;
                 border-radius: 20px;
                 padding: 5px;
+                object-fit: cover;
             }
             /*Lista de servicios*/
             
@@ -288,4 +301,43 @@
             .frase {
                 text-align: center;
                 color: red;
+            }
+            /*Lista LI insisos ABCDE */
+            
+            .lista li {
+                text-align: left;
+                text-decoration: none;
+                list-style: none;
+                letter-spacing: 1px;
+                padding: 10px;
+            }
+            
+            @media screen and (min-width:600px)and (max-width: 1400px) {
+                .title-container {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    text-align: center;
+                    height: 100px;
+                    margin-right: 80px;
+                }
+                .title {
+                    font-size: 50px;
+                    margin-right: 250px;
+                }
+                .tech {
+                    align-items: center;
+                    text-align: center;
+                    height: 100px;
+                    margin-right: 380px;
+                    justify-content: space-evenly;
+                    margin-top: 19px;
+                    font-size: 50px;
+                }
+                #slider {
+                    width: 80%;
+                    margin-top: 150px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
