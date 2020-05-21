@@ -71,7 +71,7 @@
                 position: fixed;
                 z-index: 60px;
                 top: 0;
-                left: 55%;
+                left: 49%;
                 color: red;
                 animation-delay: 5s;
                 animation: tech 5s infinite alternate;
@@ -310,6 +310,12 @@
             img {
                 border-radius: 10px;
             }
+
+           img1{
+           width:700px;                      
+           border-radius: 10px;            
+                                           
+           }
             
             @media screen and (min-width:700px)and (max-width: 1400px) {
                 .title-container {
