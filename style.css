@@ -307,11 +307,11 @@
                 padding: 10px;
             }
             
-            img {
+            .img {
                 border-radius: 10px;
             }
 
-           img1{
+           .img1{
            width:700px;                      
            border-radius: 10px;            
                                            
