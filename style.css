@@ -43,7 +43,7 @@ body {
 .title {
   animation: title 4 infinite alternate;
   transition-duration: 4s;
-  margin-left: 3%;
+  margin-left: 2%;
 }
 
 @keyframes title {
