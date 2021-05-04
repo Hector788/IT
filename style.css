@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
 }
@@ -7,10 +6,40 @@ body {
   background: rgba(0, 0, 0, 0.959);
 }
 
-/*mwnu*/
+/* menu header*/
 
 /*title*/
 
+.slogan-container {
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.slogan-container:hover {
+  color: rgb(246, 250, 3);
+}
+
+.slogan4 {
+  margin-top: 20px;
+  color: blue;
+}
+
+.slogan4:hover {
+  font-size: 40px;
+}
+
+.our {
+  color: rgb(3, 16, 196);
+}
+.solutions {
+  color: red;
+}
 .title-container {
   display: flex;
   justify-content: left;
@@ -41,9 +70,9 @@ body {
 }
 
 .title {
-  animation: title 4 infinite alternate;
-  transition-duration: 4s;
-  margin-left: 2%;
+  animation: title 5 infinite alternate;
+  transition-duration: 5s;
+  margin-left: 3%;
 }
 
 @keyframes title {
@@ -77,20 +106,34 @@ body {
   top: 0;
   left: 68%;
   color: red;
-  animation-delay: 4s;
-  animation: tech 4s infinite alternate;
+  animation-delay: 5s;
+  animation: tech 5s infinite alternate;
+}
+@keyframes tech {
+  0% {
+    opacity: 0;
+    margin-left: -50%;
+    transform: scale(0.5);
+  }
+  25% {
+    opacity: 0.11;
+    margin-left: 3%;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.51;
+    margin-left: 3%;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+
+    transform: scale(2);
+    transform: rotateY(360deg);
+  }
 }
 
-@keyframes tech {
-  to {
-    opacity: 1;
-    margin-left: 1%;
-  }
-  from {
-    opacity: 0;
-    margin-left: 50%;
-  }
-}
 /*carousel*/
 
 #slider {
@@ -149,26 +192,42 @@ body {
 .slogan-container {
   padding: 10px;
   margin: 10px;
-  color: rgb(253, 253, 253);
 }
-
+.slogan1 {
+  margin-bottom: 20px;
+}
 .slogan {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
   text-align: center;
   margin-top: 15px;
-  padding: 20px;
-  text-shadow: 1px 1px 1px rgb(250, 0, 0);
+  text-shadow: 1px 1px 1px black;
   color: whitesmoke;
   text-transform: capitalize;
 }
 
-.our {
-  color: red;
+/* Menu header*/
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid white;
 }
-.slogan1 {
-  color: beige;
+
+.header-container li {
+  text-decoration: none;
+  list-style: none;
 }
-.solutions {
-  color: blue;
+.header-container i {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 /*Social-media*/
@@ -176,40 +235,32 @@ body {
 .social-media {
   display: flex;
   justify-content: space-around;
-  padding: 30px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
   margin-top: 10px;
   font-size: 50px;
-  color: rgb(245, 245, 245);
+  color: whitesmoke;
   transition: 0.9s;
-  text-shadow: 1px 1px 1px rgb(25, 0, 250);
 }
 
 .facebook:hover {
   color: blue;
   font-size: 60px;
   transition: 0.9s;
-  background-color: aliceblue;
-  border-radius: 50%;
-}
-
-.twitter:hover {
-  color: rgb(0, 119, 255);
-  font-size: 60px;
-  transition: 0.9s;
-  text-shadow: 1px 1px 1px rgb(0, 162, 250);
-  background-color: aliceblue;
-  border-radius: 50%;
 }
 
 .instagram:hover {
   color: rgb(247, 0, 255);
   font-size: 60px;
   transition: 0.9s;
-  text-shadow: 1px 1px 1px rgb(250, 0, 187);
-  background-color: aliceblue;
-  border-radius: 50%;
 }
 
+.twitter:hover {
+  color: rgb(0, 119, 255);
+  font-size: 60px;
+  transition: 0.9s;
+}
 /*cards*/
 
 .main-container {
@@ -225,19 +276,39 @@ body {
 
 .title-cuadrados {
   color: red;
+  text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.996),
+    1px 1px 1px rgba(255, 255, 255, 0.81);
   text-transform: uppercase;
+  font-size: 20px;
 }
 
-.cuadrado1 li a {
+.cuadrado1 h3 a i {
+  line-height: 40px;
   text-decoration: none;
   list-style: none;
   text-align: left;
   color: whitesmoke;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.cuadrado1 li {
-  line-height: 30px;
-  margin-top: 40px;
+.cuadrado1 h3 {
+  line-height: 20px;
+  margin-top: 20px;
+}
+.cuadrado1 i {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding-right: 10px;
+  padding-top: 20px;
+  color: rgb(255, 253, 253);
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
 }
 
 .cuadrado1 a:hover {
@@ -251,7 +322,7 @@ body {
 .cuadrado0,
 .cuadrado1,
 .cuadrado2 {
-  height: 500px;
+  height: 550px;
   border: 1px solid black;
   text-align: center;
   box-sizing: border-box;
@@ -272,13 +343,14 @@ body {
   justify-content: center;
   flex-direction: column;
   filter: blur(3px);
+  text-decoration: none;
 }
 
 .cuadrado0:hover,
 .cuadrado1:hover,
 .cuadrado2:hover {
   background: radial-gradient(rgb(3, 16, 196), black);
-  transform: scale(1) rotateZ(360deg) rotateY(360deg) rotateY(360deg);
+  transform: scale(1) rotateZ(360deg);
   color: white;
   filter: blur(0px);
   z-index: 10;
@@ -302,8 +374,6 @@ marquee {
 .parrafos {
   text-align: justify;
   color: whitesmoke;
-  font-family: serif;
-  font-size: 23px;
   padding: 5px;
   margin: 5px 5px 5px 5px;
 }
@@ -336,7 +406,8 @@ marquee {
   padding: 10px;
 }
 
-img {
+.img {
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -362,6 +433,17 @@ img {
     margin-top: 19px;
     font-size: 50px;
   }
+
+  @keyframes tech {
+    to {
+      opacity: 1;
+      margin-left: 1%;
+    }
+    from {
+      opacity: 0;
+      margin-left: 55%;
+    }
+  }
   #slider {
     width: 80%;
     margin-top: 150px;
@@ -369,353 +451,3 @@ img {
     margin-right: auto;
   }
 }
-
-            * {
-                margin: 0;
-            }
-            
-            body {
-                background: rgba(0, 0, 0, 0.959);
-            }
-            /*title*/
-            
-            .title-container {
-                display: flex;
-                justify-content: left;
-                width: 100%;
-                line-height: 60px;
-                background: linear-gradient(black, blue);
-                color: rgb(241, 241, 241);
-                text-shadow: 1px 1px 1px black;
-                text-transform: uppercase;
-                font-size: large;
-                position: fixed;
-                top: 0px;
-                border-bottom-left-radius: 2%;
-                border-bottom-right-radius: 2%;
-                z-index: 50;
-                animation: tech-font 5s infinite alternate;
-            }
-            
-            @keyframes tech-font {
-                to {
-                    opacity: 1;
-                    margin-top: 0px;
-                }
-                from {
-                    opacity: 0;
-                    margin-top: 10px;
-                }
-            }
-            
-            .title {
-                animation: title 5 infinite alternate;
-                transition-duration: 5s;
-                margin-left: 3%;
-            }
-            
-            @keyframes title {
-                0% {
-                    opacity: 0;
-                    margin-left: -50%;
-                    transform: scale(.5);
-                }
-                25% {
-                    opacity: .11;
-                    margin-left: 3%;
-                    transform: scale(.8);
-                }
-                50% {
-                    opacity: .51;
-                    margin-left: 3%;
-                    transform: scale(.8);
-                }
-                100% {
-                    opacity: 1;
-                    margin-left: 3%;
-                    transform: scale(.8);
-                    transform: rotateY(360deg);
-                }
-            }
-            
-            .tech {
-                text-transform: uppercase;
-                position: fixed;
-                z-index: 60px;
-                top: 0;
-                left: 49%;
-                color: red;
-                animation-delay: 5s;
-                animation: tech 5s infinite alternate;
-            }
-            
-            @keyframes tech {
-                to {
-                    opacity: 1;
-                    margin-left: 1%;
-                }
-                from {
-                    opacity: 0;
-                    margin-left: 50%;
-                }
-            }
-            /*carousel*/
-            
-            #slider {
-                overflow: hidden;
-                margin-top: 45px;
-            }
-            
-            #slider figure {
-                position: relative;
-                width: 500%;
-                top: 10px;
-                margin: 0;
-                left: 0;
-                animation: 20s slider infinite;
-            }
-            
-            #slider figure img {
-                width: 20%;
-                float: left;
-            }
-            
-            @keyframes slider {
-                0% {
-                    left: 0%;
-                }
-                20% {
-                    left: 0%;
-                }
-                25% {
-                    left: -100%;
-                }
-                45% {
-                    left: -100%;
-                }
-                50% {
-                    left: -200%;
-                }
-                70% {
-                    left: -200%;
-                }
-                75% {
-                    left: -300%;
-                }
-                95% {
-                    left: -300%;
-                }
-                100% {
-                    left: -400%;
-                }
-                100% {
-                    left: -400%;
-                }
-            }
-            /*Slogan*/
-            
-            .slogan-container {
-                padding: 10px;
-                margin: 10px;
-            }
-            
-            .slogan {
-                text-align: center;
-                margin-top: 15px;
-                text-shadow: 1px 1px 1px black;
-                color: whitesmoke;
-                text-transform: capitalize;
-            }
-            /*Social-media*/
-            
-            .social-media {
-                display: flex;
-                justify-content: space-around;
-                padding: 10px;
-                margin-top: 10px;
-                font-size: 50px;
-                color: whitesmoke;
-                transition: .9s;
-            }
-            
-            .facebook:hover {
-                color: blue;
-                font-size: 60px;
-                transition: .9s;
-            }
-            
-            .instagram:hover {
-                color: rgb(247, 0, 255);
-                font-size: 60px;
-                transition: .9s;
-            }
-            
-            .twitter:hover {
-                color: rgb(0, 119, 255);
-                font-size: 60px;
-                transition: .9s;
-            }
-            /*cards*/
-            
-            .main-container {
-                margin-top: 30px;
-                margin: 5px 5px 5px 5px;
-                padding: 5px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-            
-            .title-cuadrados {
-                color: red;
-                text-transform: uppercase;
-            }
-            
-            .cuadrado1 li a {
-                text-decoration: none;
-                list-style: none;
-                text-align: left;
-                color: whitesmoke;
-            }
-            
-            .cuadrado1 li {
-                line-height: 30px;
-                margin-top: 40px;
-            }
-            
-            .cuadrado1 a:hover {
-                line-height: 30px;
-                margin-top: 40px;
-                font-size: 25px;
-                font-weight: 600;
-                color: red;
-            }
-            
-            .cuadrado0,
-            .cuadrado1,
-            .cuadrado2 {
-                height: 500px;
-                border: 1px solid black;
-                text-align: center;
-                box-sizing: border-box;
-                letter-spacing: 1px;
-                color: rgb(87, 80, 80);
-                background: radial-gradient( rgb(3, 16, 196), black);
-                border: .5px solid whitesmoke;
-                border-radius: 10px;
-                z-index: 11;
-                transition: .9s;
-                padding: 1em;
-                margin-bottom: 10px;
-                margin-top: 10px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-direction: column;
-                filter: blur(3px);
-            }
-            
-            .cuadrado0:hover,
-            .cuadrado1:hover,
-            .cuadrado2:hover {
-                background: radial-gradient( rgb(3, 16, 196), black);
-                transform: scale(1) rotate(360deg) rotateY(360deg);
-                color: white;
-                filter: blur(0px);
-                z-index: 10;
-                align-items: center;
-            }
-            /*Parrafos*/
-            
-            .parrafo-title {
-                text-align: center;
-                color: red;
-                text-transform: capitalize;
-            }
-            
-            marquee {
-                padding: 5px;
-                color: whitesmoke;
-                text-transform: capitalize;
-                font-weight: 600;
-            }
-            
-            .parrafos {
-                text-align: justify;
-                color: whitesmoke;
-                padding: 5px;
-                margin: 5px 5px 5px 5px;
-            }
-            /*Imagenes*/
-            /*Lista de servicios*/
-            
-            .lista-servicios {
-                font-size: 20px;
-                letter-spacing: 1px;
-                line-height: 25px;
-                text-transform: capitalize;
-            }
-            
-            .lista-servicios a {
-                text-align: left;
-            }
-            /*frase*/
-            
-            .frase {
-                text-align: center;
-                color: red;
-            }
-            /*Lista LI insisos ABCDE */
-            
-            .lista li {
-                text-align: left;
-                text-decoration: none;
-                list-style: none;
-                letter-spacing: 1px;
-                padding: 10px;
-            }
-            
-            .img {
-                border-radius: 10px;
-            }
-
-           .img1{
-           width:700px;                      
-           border-radius: 10px;            
-                                           
-           }
-            
-            @media screen and (min-width:700px)and (max-width: 1400px) {
-                .title-container {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    text-align: center;
-                    height: 100px;
-                    margin-right: 80px;
-                }
-                .title {
-                    font-size: 50px;
-                    margin-right: 250px;
-                }
-                .tech {
-                    align-items: center;
-                    text-align: center;
-                    height: 100px;
-                    margin-right: 380px;
-                    justify-content: space-evenly;
-                    margin-top: 19px;
-                    font-size: 50px;
-                }
-                #slider {
-                    width: 80%;
-                    margin-top: 150px;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-
