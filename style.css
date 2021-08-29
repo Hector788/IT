@@ -40,7 +40,7 @@ body {
   animation: title 5 infinite alternate;
   transition-duration: 5s; 
   text-align: center;
-  margin-right: 10px;
+ 
 }
 
 @keyframes title {
@@ -56,12 +56,12 @@ body {
   }
   50% {
     opacity: 0.51;
-    margin-left: 3%;
+  
     transform: scale(0.8);
   }
   100% {
     opacity: 1;
-    margin-left: 3%;
+   
     transform: scale(0.8);
     transform: rotateY(360deg);
   }
@@ -424,6 +424,7 @@ marquee {
 
 
 .footer-container { 
+  max-width: 100%;
   padding: auto;
   display: flex;
   justify-content:space-around;
@@ -431,14 +432,13 @@ marquee {
   align-items: center;
   text-align: center;
   border-top: 2px solid white;
-  width: 100%;
+
   height: 150px;
   background: linear-gradient(black, blue);
 }
 
 .videolink{
-margin-left: 18%;
-margin-bottom: 20%;
+width: 100%;
 }
 
 .social-media-footer i{
