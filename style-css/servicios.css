@@ -4,12 +4,14 @@
 }
 
 .regresar{
-	background-color: rgb(255, 255, 255);
-	color: #0f03ff;
+	background-color: rgb(4, 14, 160);
+	color: #fcfcfc;
 	font-weight: 500;
 	border-radius: 10px;
 	font-size: 14px;
 	padding: 5px;
+    position: absolute;
+    top: 2; 
 	box-shadow: 10 10 10px rgb(89, 6, 241);
 	border:3px solid rgb(13, 19, 190) ;	
 	transition:1s;
@@ -21,4 +23,11 @@
 	border:3px solid white ;
 		text-decoration: none;
 	
+}
+
+
+.titulo-servicios{
+    margin-top: 20px;
+    text-align: center;
+
 }
