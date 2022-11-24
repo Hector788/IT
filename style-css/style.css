@@ -433,7 +433,6 @@ marquee {
   align-items: center;
   text-align: center;
   border-top: 2px solid white;
-
   height: 150px;
   background: linear-gradient(black, blue);
 }
