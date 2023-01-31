@@ -6,6 +6,31 @@ body {
     background: rgba(0, 0, 0, 0.959);
 }
 
+#header-container {
+    width: 100%;
+}
+
+.regresar-home {
+    background-color: rgb(11, 26, 238);
+    color: #fcfcfc;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+    left: 4px;
+    box-shadow: 10 10 10px rgb(89, 6, 241);
+    border: 3px solid rgb(255, 255, 255);
+    transition: 1s;
+    text-decoration: none;
+    z-index: 100;
+}
+
+#AboutUs {
+    margin-top: 40px;
+}
+
 
 /*animacion header*/
 
@@ -48,19 +73,15 @@ body {
 @keyframes title {
     0% {
         opacity: 0;
-        transform: scale(0.5);
     }
     25% {
         opacity: 0.11;
-        transform: scale(0.8);
     }
     50% {
         opacity: 0.51;
-        transform: scale(0.8);
     }
     100% {
         opacity: 1;
-        transform: scale(0.8);
         transform: rotateY(360deg);
     }
 }
@@ -214,19 +235,20 @@ body {
 
 .logoIT {
     width: 40%;
+    margin-top: 60px;
     animation: logoIT 8s infinite alternate;
 }
 
 @keyframes logoIT {
     0% {
-        margin-top: 0px;
-        scale: .2;
+        margin-top: 60px;
+        scale: 1;
     }
     80% {
         transform: scale(1) rotateY(360deg);
     }
     100% {
-        scale: 1.1;
+        scale: 1;
     }
 }
 
@@ -469,7 +491,8 @@ marquee {
 
 .frase {
     text-align: center;
-    color: red;
+    justify-content: center;
+    color: rgb(240, 10, 10);
 }
 
 
@@ -481,6 +504,7 @@ marquee {
     list-style: none;
     letter-spacing: 1px;
     padding: 10px;
+    color: gold;
 }
 
 .img {
@@ -505,7 +529,7 @@ marquee {
 }
 
 .videolink {
-    width: 100%;
+    width: 110%;
 }
 
 .social-media-footer i {
@@ -524,7 +548,13 @@ marquee {
     bottom: 30px;
 }
 
+.text-follow {
+    color: #fff;
+    text-transform: capitalize;
+}
+
 .derechos-text {
+    text-transform: capitalize;
     margin-top: 20px;
     color: white
 }
@@ -533,4 +563,44 @@ marquee {
     text-decoration: none;
     list-style: none;
     color: #fff;
+}
+
+.send-mail-letter {
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.bussinesname {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    background-color: rgb(11, 26, 162);
+    animation: bussinesname 6s infinite alternate;
+}
+
+@keyframes bussinesname {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.preguntas {
+    color: red;
+    font-size: 20px;
+}
+
+.servicios {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10%;
+}
+
+.info {
+    color: black;
 }
