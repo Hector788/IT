@@ -26,7 +26,7 @@ document.getElementById("likeButton").addEventListener("click", function() {
     // código para contar los clics aquí
 });
 
-let likeCount = 0;
+let likeCount = 10;
 
 // cargar la información de almacenamiento local si existe
 if (localStorage.getItem("likeCount")) {
