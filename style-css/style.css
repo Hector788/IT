@@ -604,3 +604,59 @@ marquee {
 .info {
     color: black;
 }
+
+.img-desarrollo {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#likeButton {
+    cursor: pointer;
+    background: blue;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.likeButton-container {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    padding-right: 10px;
+}
+
+.reaction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reaction-button {
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.reaction-button:hover {
+    background-color: rgb(46, 66, 214);
+    border-radius: 50%;
+}
+
+.reaction-button i {
+    font-size: 30px;
+}
